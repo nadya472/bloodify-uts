@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="detailJadwalVM" type="com.nadyasapplication.app.modules.detailjadwal.data.viewmodel.DetailJadwalVM"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearDetailJadwal"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_50">
+        <ImageView android:id="@+id/imageBackOne"
+            android:layout_height="@dimen/_21pxh"
+            android:layout_marginEnd="@dimen/_30pxh"
+            android:layout_marginStart="@dimen/_30pxh"
+            android:layout_marginTop="@dimen/_38pxv"
+            android:layout_width="@dimen/_40pxh"
+            android:scaleType="fitXY" android:src="@drawable/img_back1"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_back1"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtDETAILKEGIATAN"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_30pxh"
+            android:layout_marginStart="@dimen/_30pxh"
+            android:layout_marginTop="@dimen/_16pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{detailJadwalVM.detailJadwalModel.txtDETAILKEGIATAN}"
+            style="@style/txtJosefinSansromanmedium16" tools:text="@string/lbl_detail_kegiatan"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearLokasi"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_29pxh"
+            android:layout_marginStart="@dimen/_29pxh"
+            android:layout_marginTop="@dimen/_18pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylecornerRadius">
+            <LinearLayout android:gravity="center_horizontal"
+                android:id="@+id/linearPMIDaerah"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylecornerRadius">
+                <FrameLayout android:id="@+id/frameStacksteleven"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_133pxv"
+                    android:layout_width="@dimen/_310pxh" style="@style/groupStylebluegray_100cornerRadius">
+                    <ImageView android:id="@+id/imageStEleven"
+                        android:layout_gravity="center"
+                        android:layout_height="@dimen/_133pxh"
+                        android:layout_marginStart="@dimen/_1pxh"
+                        android:layout_width="@dimen/_309pxh"
+                        android:scaleType="fitXY"
+                        cornerRadius="@{@dimen/_6pxh}"
+                        imageRes="@{@drawable/img_st11}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_st11"/>
+                </FrameLayout>
+            </LinearLayout>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtUTDPMIKabupat"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_3pxh"
+                android:layout_marginTop="@dimen/_13pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{detailJadwalVM.detailJadwalModel.txtUTDPMIKabupat}"
+                style="@style/txtJosefinSansromanmedium14" tools:text="@string/msg_utd_pmi_kabupat2"/>
+        </LinearLayout>
+        <View android:background="@color/black_900"
+            android:id="@+id/lineVectorFour"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_1pxv"
+            android:layout_marginEnd="@dimen/_29pxh"
+            android:layout_marginStart="@dimen/_29pxh"
+            android:layout_marginTop="@dimen/_8pxv" android:layout_width="@dimen/_309pxh"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumncalendar"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_31pxh"
+            android:layout_marginStart="@dimen/_31pxh"
+            android:layout_marginTop="@dimen/_12pxv"
+            android:layout_width="wrap_content" android:orientation="vertical">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRowcalendar"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="wrap_content" android:orientation="horizontal">
+                <ImageView android:id="@+id/imageCalendar"
+                    android:layout_height="@dimen/_15pxh"
+                    android:layout_width="@dimen/_15pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_calendar_red_400"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_calendar_red_400"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtBukasetiaphar"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_1pxv"
+                    android:layout_marginStart="@dimen/_8pxh"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_weight="0.87"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{detailJadwalVM.detailJadwalModel.txtBukasetiaphar}"
+                    style="@style/txtJosefinSansromanmedium13" tools:text="@string/msg_buka_setiap_har"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRowclock"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_11pxv"
+                android:layout_width="wrap_content" android:orientation="horizontal">
+                <ImageView android:id="@+id/imageClock"
+                    android:layout_height="@dimen/_16pxh"
+                    android:layout_width="@dimen/_15pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_clock"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_clock"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtPukul08002"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_3pxv"
+                    android:layout_marginStart="@dimen/_8pxh"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_weight="0.89"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{detailJadwalVM.detailJadwalModel.txtPukul08002}"
+                    style="@style/txtJosefinSansromanmedium13" tools:text="@string/msg_pukul_08_00_2"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@color/black_900"
+            android:id="@+id/lineVectorFive"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_1pxv"
+            android:layout_marginEnd="@dimen/_29pxh"
+            android:layout_marginStart="@dimen/_29pxh"
+            android:layout_marginTop="@dimen/_13pxv" android:layout_width="@dimen/_309pxh"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearRowmenu"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_29pxh"
+            android:layout_marginStart="@dimen/_29pxh"
+            android:layout_marginTop="@dimen/_14pxv"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <ImageView android:id="@+id/imageMenu"
+                android:layout_height="@dimen/_15pxh"
+                android:layout_marginBottom="@dimen/_24pxv"
+                android:layout_marginTop="@dimen/_4pxv"
+                android:layout_width="@dimen/_15pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_menu_red_400"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_menu_red_400"/>
+            <TextView android:id="@+id/txtKegiatandonor"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_9pxh"
+                android:layout_weight="0.95" android:layout_width="0dp"
+                android:text="@{detailJadwalVM.detailJadwalModel.txtKegiatandonor}"
+                style="@style/txtJosefinSansromanmedium13" tools:text="@string/msg_kegiatan_donor"/>
+        </LinearLayout>
+        <View android:background="@color/black_900"
+            android:id="@+id/lineVectorSix"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_1pxv"
+            android:layout_marginEnd="@dimen/_29pxh"
+            android:layout_marginStart="@dimen/_29pxh"
+            android:layout_marginTop="@dimen/_28pxv" android:layout_width="@dimen/_309pxh"/>
+        <ImageView android:id="@+id/imageImageOne"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_150pxh"
+            android:layout_marginEnd="@dimen/_29pxh"
+            android:layout_marginStart="@dimen/_29pxh"
+            android:layout_marginTop="@dimen/_11pxv"
+            android:layout_width="@dimen/_310pxh"
+            android:scaleType="fitXY" cornerRadius="@{@dimen/_6pxh}"
+            imageRes="@{@drawable/img_image1}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_image1"/>
+        <TextView android:gravity="center_horizontal"
+            android:id="@+id/txtJlRayaTeuku"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_29pxh"
+            android:layout_marginStart="@dimen/_29pxh"
+            android:layout_marginTop="@dimen/_3pxv"
+            android:layout_width="match_parent"
+            android:text="@{detailJadwalVM.detailJadwalModel.txtJlRayaTeuku}"
+            style="@style/txtJosefinSansromanmedium11" tools:text="@string/msg_jl_raya_teuku"/>
+    </LinearLayout>
+</layout>

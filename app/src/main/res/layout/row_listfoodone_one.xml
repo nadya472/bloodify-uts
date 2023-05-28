@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listfoodoneOneRowModel" type="com.nadyasapplication.app.modules.menuberitainfo.data.model.ListfoodoneOneRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowfoodone"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" style="@style/groupStylebluegray_1">
+        <ImageView android:id="@+id/imageFoodOneOne"
+            android:layout_height="@dimen/_73pxh"
+            android:layout_marginBottom="@dimen/_7pxv"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="@dimen/_73pxh"
+            android:scaleType="fitXY" cornerRadius="@{@dimen/_5pxh}"
+            imageRes="@{@drawable/img_food1}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_food1"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnlanguage"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_22pxv"
+            android:layout_marginEnd="@dimen/_58pxh"
+            android:layout_marginStart="@dimen/_18pxh"
+            android:layout_marginTop="@dimen/_24pxv"
+            android:layout_weight="0.68" android:layout_width="0dp" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtLanguageOne"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{listfoodoneOneRowModel.txtLanguageOne}"
+                style="@style/txtJosefinSansromanmedium13" tools:text="@string/msg_anti_hambar_co"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtJanuariCounterTwo"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_6pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{listfoodoneOneRowModel.txtJanuariCounterTwo}"
+                style="@style/txtJosefinSansromanlight12" tools:text="@string/lbl_januari_2023"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

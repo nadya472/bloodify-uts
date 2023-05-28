@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="getStartedThreeVM" type="com.nadyasapplication.app.modules.getstartedthree.data.viewmodel.GetStartedThreeVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumn"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_50">
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearIPhone82"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearColumndownloadertwo"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_8pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylegray_50">
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearRowdownloaderthree"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_68pxv"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <LinearLayout
+                        android:id="@+id/linearRowdownloadertwo"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="-0.02"
+                        android:layout_width="0dp" android:orientation="horizontal">
+                        <ImageView android:id="@+id/imageDownloaderTwo"
+                            android:layout_height="@dimen/_270pxh"
+                            android:layout_width="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_downloader2_270x1"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_downloader2_270x1"/>
+                        <ImageView android:id="@+id/imageDownloaderOne"
+                            android:layout_height="@dimen/_230pxh"
+                            android:layout_marginBottom="@dimen/_20pxv"
+                            android:layout_marginEnd="@dimen/_392pxh"
+                            android:layout_marginStart="@dimen/_6pxh"
+                            android:layout_marginTop="@dimen/_20pxv"
+                            android:layout_width="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_downloader1_1"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_downloader1_1"/>
+                    </LinearLayout>
+                    <ImageView android:id="@+id/imageDownloaderThree"
+                        android:layout_height="@dimen/_230pxh"
+                        android:layout_marginBottom="@dimen/_30pxv"
+                        android:layout_marginStart="@dimen/_27pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:scaleType="fitXY"
+                        imageRes="@{@drawable/img_downloader3_230x330}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_downloader3_230x330"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearRowdapatkanreward"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_14pxv"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <LinearLayout
+                        android:id="@+id/linearRowmerekaselamat"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="-1.17"
+                        android:layout_width="0dp" android:orientation="horizontal">
+                        <TextView android:id="@+id/txtMerekaSELAMAT"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_33pxv"
+                            android:layout_weight="0.15"
+                            android:layout_width="0dp"
+                            android:text="@{getStartedThreeVM.getStartedThreeModel.txtMerekaSELAMAT}"
+                            style="@style/txtOswaldregular14" tools:text="@string/msg_mereka_selamat"/>
+                        <TextView android:id="@+id/txtMulaiGayaHidu"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_378pxh"
+                            android:layout_marginStart="@dimen/_82pxh"
+                            android:layout_marginTop="@dimen/_3pxv"
+                            android:layout_weight="0.85"
+                            android:layout_width="0dp"
+                            android:text="@{getStartedThreeVM.getStartedThreeModel.txtMulaiGayaHidu}"
+                            style="@style/txtOswaldregular16" tools:text="@string/msg_mulai_gaya_hidu"/>
+                    </LinearLayout>
+                    <TextView android:id="@+id/txtDapatkanREWARD"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_13pxv"
+                        android:layout_marginStart="@dimen/_198pxh"
+                        android:layout_marginTop="@dimen/_1pxv"
+                        android:layout_weight="2.17"
+                        android:layout_width="0dp"
+                        android:text="@{getStartedThreeVM.getStartedThreeModel.txtDapatkanREWARD}"
+                        style="@style/txtOswaldregular14" tools:text="@string/msg_dapatkan_reward"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearRowkumpulkanpoint"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_19pxv"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <LinearLayout android:id="@+id/linearRowdescription"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_1pxv"
+                        android:layout_weight="-0.98"
+                        android:layout_width="0dp" android:orientation="horizontal">
+                        <TextView android:id="@+id/txtDescription"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.16"
+                            android:layout_width="0dp"
+                            android:letterSpacing="0.06"
+                            android:text="@{getStartedThreeVM.getStartedThreeModel.txtDescription}"
+                            style="@style/txtQuestrialregular11" tools:text="@string/msg_tahukan_kamu_ba"/>
+                        <TextView android:id="@+id/txtLanguage"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_22pxv"
+                            android:layout_marginEnd="@dimen/_372pxh"
+                            android:layout_marginStart="@dimen/_88pxh"
+                            android:layout_weight="0.84"
+                            android:layout_width="0dp"
+                            android:letterSpacing="0.06"
+                            android:text="@{getStartedThreeVM.getStartedThreeModel.txtLanguage}"
+                            style="@style/txtQuestrialregular11" tools:text="@string/msg_temukan_jadwal"/>
+                    </LinearLayout>
+                    <TextView android:id="@+id/txtKumpulkanpoint"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_29pxv"
+                        android:layout_marginStart="@dimen/_189pxh"
+                        android:layout_weight="1.98"
+                        android:layout_width="0dp"
+                        android:letterSpacing="0.06"
+                        android:text="@{getStartedThreeVM.getStartedThreeModel.txtKumpulkanpoint}"
+                        style="@style/txtQuestrialregular11" tools:text="@string/msg_kumpulkan_point"/>
+                </LinearLayout>
+
+                <com.asksira.loopingviewpager.indicator.CustomShapePagerIndicator
+                    android:id="@+id/indicatorMenu"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_20pxv"
+                    android:layout_marginEnd="@dimen/_158pxh"
+                    android:layout_marginStart="@dimen/_171pxh"
+                    android:layout_marginTop="@dimen/_115pxv"
+                    android:layout_width="wrap_content"
+                    app:drawable_normal="@drawable/indicator_unselected_bg_red_200_radius_8"
+                    app:drawable_selected="@drawable/indicator_selected_bg_red_400_radius_8"
+                    app:indicator_size="@dimen/_10pxh" app:indicator_spacing="@dimen/_2pxh"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="detailRewardVM" type="com.nadyasapplication.app.modules.detailreward.data.viewmodel.DetailRewardVM"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearDetailReward"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_50">
+        <ImageView android:id="@+id/imageBackOne"
+            android:layout_height="@dimen/_21pxh"
+            android:layout_marginEnd="@dimen/_30pxh"
+            android:layout_marginStart="@dimen/_30pxh"
+            android:layout_marginTop="@dimen/_38pxv"
+            android:layout_width="@dimen/_40pxh"
+            android:scaleType="fitXY" android:src="@drawable/img_back1"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_back1"/>
+        <FrameLayout android:id="@+id/frameStackchatimeemblem"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_540pxv"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_29pxh"
+            android:layout_marginStart="@dimen/_29pxh"
+            android:layout_marginTop="@dimen/_30pxv" android:layout_width="@dimen/_317pxh">
+            <FrameLayout android:id="@+id/frameRewarddetails"
+                android:layout_gravity="top|center"
+                android:layout_height="@dimen/_350pxv"
+                android:layout_marginBottom="@dimen/_10pxv"
+                android:layout_marginEnd="@dimen/_1pxh"
+                android:layout_width="@dimen/_316pxh" style="@style/groupStylebluegray_3">
+                <ImageView android:id="@+id/imageChatimeEmblem"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_300pxv"
+                    android:layout_marginBottom="@dimen/_20pxv"
+                    android:layout_marginTop="@dimen/_20pxv"
+                    android:layout_width="match_parent"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_chatimeemblem_300x316}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_chatimeemblem_300x316"/>
+            </FrameLayout>
+            <LinearLayout android:id="@+id/linearColumntebusmurahset"
+                android:layout_gravity="top|start"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylecornerRadius_6">
+                <TextView android:gravity="start"
+                    android:id="@+id/txtTebusmurahset"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_96pxv"
+                    android:layout_marginEnd="@dimen/_25pxh"
+                    android:layout_marginStart="@dimen/_25pxh"
+                    android:layout_marginTop="@dimen/_195pxv"
+                    android:layout_width="match_parent"
+                    android:text="@{detailRewardVM.detailRewardModel.txtTebusmurahset}"
+                    style="@style/txtJosefinSansromanmedium15" tools:text="@string/msg_tebus_murah_set2"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/linearColumnsyaratdankete"
+                android:layout_gravity="bottom|start"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylebluegray_3">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtSyaratdanKete"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_21pxh"
+                    android:layout_marginStart="@dimen/_21pxh"
+                    android:layout_marginTop="@dimen/_41pxv"
+                    android:layout_width="wrap_content"
+                    android:lineSpacingExtra="@dimen/_1pxh"
+                    android:singleLine="true"
+                    android:text="@{detailRewardVM.detailRewardModel.txtSyaratdanKete}"
+                    style="@style/txtJosefinSansromanregular13" tools:text="@string/msg_syarat_dan_kete"/>
+                <TextView android:id="@+id/txtLanguage"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_31pxh"
+                    android:layout_marginStart="@dimen/_31pxh"
+                    android:layout_marginTop="@dimen/_7pxv"
+                    android:layout_width="match_parent"
+                    android:lineSpacingExtra="@dimen/_4pxh"
+                    android:text="@{detailRewardVM.detailRewardModel.txtLanguage}"
+                    style="@style/txtJosefinSansromanregular13" tools:text="@string/msg_lorem_ipsum_is2"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtLokasiOutlet"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_19pxh"
+                    android:layout_marginStart="@dimen/_19pxh"
+                    android:layout_marginTop="@dimen/_21pxv"
+                    android:layout_width="wrap_content"
+                    android:lineSpacingExtra="@dimen/_1pxh"
+                    android:singleLine="true"
+                    android:text="@{detailRewardVM.detailRewardModel.txtLokasiOutlet}"
+                    style="@style/txtJosefinSansromanregular13" tools:text="@string/lbl_lokasi_outlet"/>
+                <TextView android:gravity="center_horizontal"
+                    android:id="@+id/txtDescription"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_20pxv"
+                    android:layout_marginEnd="@dimen/_19pxh"
+                    android:layout_marginStart="@dimen/_19pxh"
+                    android:layout_marginTop="@dimen/_5pxv"
+                    android:layout_width="match_parent"
+                    android:lineSpacingExtra="@dimen/_4pxh"
+                    android:text="@{detailRewardVM.detailRewardModel.txtDescription}"
+                    style="@style/txtJosefinSansromanregular13" tools:text="@string/msg_lorem_ipsum_is3"/>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</layout>

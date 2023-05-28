@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="tipeGoldarVM" type="com.nadyasapplication.app.modules.tipegoldar.data.viewmodel.TipeGoldarVM"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearTipeGoldar"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_50">
+        <ImageView android:id="@+id/imageBackOne"
+            android:layout_height="@dimen/_21pxh"
+            android:layout_marginEnd="@dimen/_30pxh"
+            android:layout_marginStart="@dimen/_30pxh"
+            android:layout_marginTop="@dimen/_38pxv"
+            android:layout_width="@dimen/_40pxh"
+            android:scaleType="fitXY" android:src="@drawable/img_back1"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_back1"/>
+        <LinearLayout android:gravity="end"
+            android:id="@+id/linearColumnpilihtipegolo"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_32pxh"
+            android:layout_marginStart="@dimen/_32pxh"
+            android:layout_marginTop="@dimen/_14pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:id="@+id/txtPilihtipeGolo"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_5pxh"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{tipeGoldarVM.tipeGoldarModel.txtPilihtipeGolo}"
+                style="@style/txtJosefinSansromanregular18" tools:text="@string/msg_pilih_tipe_golo"/>
+            <LinearLayout android:gravity="end"
+                android:id="@+id/linearRowa"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_7pxh"
+                android:layout_marginStart="@dimen/_24pxh"
+                android:layout_marginTop="@dimen/_40pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnA"
+                    android:layout_height="@dimen/_69pxv"
+                    android:layout_width="@dimen/_122pxh"
+                    android:paddingBottom="@dimen/_14pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_14pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_a"
+                    android:textAllCaps="false"
+                    style="@style/btnSolidRounded_3" tools:text="@string/lbl_a"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnB"
+                    android:layout_height="@dimen/_69pxv"
+                    android:layout_marginStart="@dimen/_17pxh"
+                    android:layout_width="@dimen/_122pxh"
+                    android:paddingBottom="@dimen/_14pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_14pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_b"
+                    android:textAllCaps="false"
+                    style="@style/btnSolidRounded_3" tools:text="@string/lbl_b"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="end"
+                android:id="@+id/linearRowab"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_7pxh"
+                android:layout_marginStart="@dimen/_24pxh"
+                android:layout_marginTop="@dimen/_19pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnAb"
+                    android:layout_height="@dimen/_69pxv"
+                    android:layout_width="@dimen/_122pxh"
+                    android:paddingBottom="@dimen/_14pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_14pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_ab2"
+                    android:textAllCaps="false"
+                    style="@style/btnSolidRounded_3" tools:text="@string/lbl_ab2"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnO"
+                    android:layout_height="@dimen/_69pxv"
+                    android:layout_marginStart="@dimen/_17pxh"
+                    android:layout_width="@dimen/_122pxh"
+                    android:paddingBottom="@dimen/_14pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_14pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_o"
+                    android:textAllCaps="false"
+                    style="@style/btnSolidRounded_3" tools:text="@string/lbl_o"/>
+            </LinearLayout>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtPilihRhesusmu"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_63pxh"
+                android:layout_marginStart="@dimen/_63pxh"
+                android:layout_marginTop="@dimen/_34pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{tipeGoldarVM.tipeGoldarModel.txtPilihRhesusmu}"
+                style="@style/txtJosefinSansromanregular14" tools:text="@string/msg_pilih_rhesusmu"/>
+            <LinearLayout android:gravity="center_vertical"
+                android:id="@+id/linearRowrectangletwentyfour"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_24pxh"
+                android:layout_marginStart="@dimen/_24pxh"
+                android:layout_marginTop="@dimen/_7pxv"
+                android:layout_width="wrap_content" android:orientation="horizontal">
+                <FrameLayout
+                    android:id="@+id/frameStackrectangletwentyfour"
+                    android:layout_height="@dimen/_39pxv"
+                    android:layout_marginBottom="@dimen/_1pxv" android:layout_width="@dimen/_65pxh">
+                    <View
+                        android:background="@drawable/rectangle_bg_red_401_radius_3"
+                        android:id="@+id/viewRectangleTwentyFour"
+                        android:layout_gravity="top|start"
+                        android:layout_height="@dimen/_37pxv"
+                        android:layout_marginBottom="@dimen/_10pxv" android:layout_width="@dimen/_65pxh"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtOne"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_21pxh"
+                        android:layout_marginStart="@dimen/_22pxh"
+                        android:layout_marginTop="@dimen/_1pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@{tipeGoldarVM.tipeGoldarModel.txtOne}"
+                        style="@style/txtInterregular32" tools:text="@string/lbl3"/>
+                </FrameLayout>
+                <FrameLayout
+                    android:id="@+id/frameStackrectangletwentyfive"
+                    android:layout_height="@dimen/_39pxv"
+                    android:layout_marginStart="@dimen/_20pxh" android:layout_width="@dimen/_65pxh">
+                    <View
+                        android:background="@drawable/rectangle_bg_red_401_radius_3"
+                        android:id="@+id/viewRectangleTwentyFive"
+                        android:layout_gravity="top|start"
+                        android:layout_height="@dimen/_37pxv"
+                        android:layout_marginBottom="@dimen/_10pxv" android:layout_width="@dimen/_65pxh"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtTwo"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_25pxh"
+                        android:layout_marginStart="@dimen/_25pxh"
+                        android:layout_marginTop="@dimen/_1pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@{tipeGoldarVM.tipeGoldarModel.txtTwo}"
+                        style="@style/txtInterregular32" tools:text="@string/lbl4"/>
+                </FrameLayout>
+            </LinearLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnSayaBelumTahuGolonganDarahSaya"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_17pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_4pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_4pxv"
+                android:singleLine="true"
+                android:text="@string/msg_saya_belum_tahu"
+                android:textAllCaps="false"
+                style="@style/btnSolidRounded_4" tools:text="@string/msg_saya_belum_tahu"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnLanjut"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_15pxh"
+                android:layout_marginStart="@dimen/_15pxh"
+                android:layout_marginTop="@dimen/_147pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_13pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_13pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_lanjut"
+                android:textAllCaps="false"
+                style="@style/btnSolidRounded_5" tools:text="@string/lbl_lanjut"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

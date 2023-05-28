@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest package="com.nadyasapplication.app" xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name" android:largeHeap="true"
+        android:name="com.nadyasapplication.app.appcomponents.di.MyApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true" android:theme="@style/Theme.MyApp" android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.nadyasapplication.app.modules.detailprofil.ui.DetailProfilActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.nadyasapplication.app.modules.getstartedthree.ui.GetStartedThreeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.nadyasapplication.app.modules.lupapassword.ui.LupaPasswordActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.nadyasapplication.app.modules.detailjadwal.ui.DetailJadwalActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.nadyasapplication.app.modules.menujadwalcontainer.ui.MenuJadwalContainerActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true"
+            android:name="com.nadyasapplication.app.modules.getstartedfive.ui.GetStartedFiveActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.nadyasapplication.app.modules.halamanlogin.ui.HalamanLoginActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.nadyasapplication.app.modules.menuutama.ui.MenuUtamaActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.nadyasapplication.app.modules.detailreward.ui.DetailRewardActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.nadyasapplication.app.modules.detailprofilone.ui.DetailProfilOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.nadyasapplication.app.modules.tipegoldar.ui.TipeGoldarActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.nadyasapplication.app.modules.halamanregistrasi.ui.HalamanRegistrasiActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.nadyasapplication.app.modules.menureward.ui.MenuRewardActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.nadyasapplication.app.modules.kartudigital.ui.KartuDigitalActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.nadyasapplication.app.modules.getstartedfour.ui.GetStartedFourActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.nadyasapplication.app.modules.passwordbaruterkirim.ui.PasswordBaruTerkirimActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.nadyasapplication.app.modules.getstartedtwo.ui.GetStartedTwoActivity" android:screenOrientation="portrait"/>
+    </application>
+</manifest>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="getStartedFourVM" type="com.nadyasapplication.app.modules.getstartedfour.data.viewmodel.GetStartedFourVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumnasset2319xtwo"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_50">
+        <ImageView android:id="@+id/imageAsset2319xTwo"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_87pxh"
+            android:layout_marginEnd="@dimen/_86pxh"
+            android:layout_marginStart="@dimen/_86pxh"
+            android:layout_marginTop="@dimen/_100pxv"
+            android:layout_width="@dimen/_100pxh"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_asset2319x3}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_asset2319x3"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtBloodify"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_86pxh"
+            android:layout_marginStart="@dimen/_86pxh"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{getStartedFourVM.getStartedFourModel.txtBloodify}"
+            style="@style/txtJosefinSansromanbold32" tools:text="@string/lbl_bloodify"/>
+        <TextView android:id="@+id/txtJointheBloodi"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_86pxh"
+            android:layout_marginStart="@dimen/_86pxh"
+            android:layout_marginTop="@dimen/_9pxv"
+            android:layout_width="wrap_content"
+            android:text="@{getStartedFourVM.getStartedFourModel.txtJointheBloodi}"
+            style="@style/txtJosefinSansromanlight14" tools:text="@string/msg_join_the_bloodi"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnLogin"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_86pxh"
+            android:layout_marginStart="@dimen/_86pxh"
+            android:layout_marginTop="@dimen/_59pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_15pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_15pxv" android:singleLine="true"
+            android:text="@string/lbl_login" android:textAllCaps="false"
+            style="@style/btnSolidRounded_1" tools:text="@string/lbl_login"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnDaftar"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_86pxh"
+            android:layout_marginStart="@dimen/_86pxh"
+            android:layout_marginTop="@dimen/_29pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_15pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_15pxv" android:singleLine="true"
+            android:text="@string/lbl_daftar"
+            android:textAllCaps="false" style="@style/btnSolidRounded_1" tools:text="@string/lbl_daftar"/>
+    </LinearLayout>
+</layout>

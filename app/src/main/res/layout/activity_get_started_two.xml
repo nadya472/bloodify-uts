@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="getStartedTwoVM" type="com.nadyasapplication.app.modules.getstartedtwo.data.viewmodel.GetStartedTwoVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumn"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_50">
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearIPhone82"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearColumndownloaderone"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_8pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylegray_50">
+                <LinearLayout android:id="@+id/linearRowdownloaderone"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_68pxv"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <ImageView android:id="@+id/imageDownloaderOne"
+                        android:layout_height="@dimen/_230pxh"
+                        android:layout_marginBottom="@dimen/_20pxv"
+                        android:layout_marginTop="@dimen/_20pxv"
+                        android:layout_width="@dimen/_1pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_downloader1_230x1"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_downloader1_230x1"/>
+                    <ImageView android:id="@+id/imageDownloaderTwo"
+                        android:layout_height="@dimen/_270pxh"
+                        android:layout_marginStart="@dimen/_27pxh"
+                        android:layout_width="match_parent"
+                        android:scaleType="fitXY"
+                        imageRes="@{@drawable/img_downloader2_270x365}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_downloader2_270x365"/>
+                    <ImageView android:id="@+id/imageDownloaderThree"
+                        android:layout_height="@dimen/_230pxh"
+                        android:layout_marginBottom="@dimen/_30pxv"
+                        android:layout_marginStart="@dimen/_27pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="@dimen/_1pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_downloader3_230x1"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_downloader3_230x1"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearRowmulaigayahidu"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_17pxv"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <TextView android:id="@+id/txtMulaiGayaHidu"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="-4.18"
+                        android:layout_width="0dp"
+                        android:text="@{getStartedTwoVM.getStartedTwoModel.txtMulaiGayaHidu}"
+                        style="@style/txtOswaldregular16" tools:text="@string/msg_mulai_gaya_hidu"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtMerekaSELAMAT"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_35pxv"
+                        android:layout_marginStart="@dimen/_176pxh"
+                        android:layout_marginTop="@dimen/_3pxv"
+                        android:layout_weight="10.36"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{getStartedTwoVM.getStartedTwoModel.txtMerekaSELAMAT}"
+                        style="@style/txtOswaldregular14" tools:text="@string/msg_mereka_selamat"/>
+                    <TextView android:id="@+id/txtDapatkanREWARD"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_20pxv"
+                        android:layout_marginStart="@dimen/_179pxh"
+                        android:layout_marginTop="@dimen/_1pxv"
+                        android:layout_weight="-5.18"
+                        android:layout_width="0dp"
+                        android:text="@{getStartedTwoVM.getStartedTwoModel.txtDapatkanREWARD}"
+                        style="@style/txtOswaldregular14" tools:text="@string/msg_dapatkan_reward"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearRowlanguage"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16pxv"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <TextView android:id="@+id/txtLanguage"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_26pxv"
+                        android:layout_marginTop="@dimen/_3pxv"
+                        android:layout_weight="-4.16"
+                        android:layout_width="0dp"
+                        android:letterSpacing="0.06"
+                        android:text="@{getStartedTwoVM.getStartedTwoModel.txtLanguage}"
+                        style="@style/txtQuestrialregular11" tools:text="@string/msg_temukan_jadwal"/>
+                    <TextView android:id="@+id/txtDescription"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_176pxh"
+                        android:layout_weight="10.16"
+                        android:layout_width="0dp"
+                        android:letterSpacing="0.06"
+                        android:text="@{getStartedTwoVM.getStartedTwoModel.txtDescription}"
+                        style="@style/txtQuestrialregular11" tools:text="@string/msg_tahukan_kamu_ba"/>
+                    <TextView android:id="@+id/txtKumpulkanpoint"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_31pxv"
+                        android:layout_marginStart="@dimen/_179pxh"
+                        android:layout_marginTop="@dimen/_1pxv"
+                        android:layout_weight="-4.99"
+                        android:layout_width="0dp"
+                        android:letterSpacing="0.06"
+                        android:text="@{getStartedTwoVM.getStartedTwoModel.txtKumpulkanpoint}"
+                        style="@style/txtQuestrialregular11" tools:text="@string/msg_kumpulkan_point"/>
+                </LinearLayout>
+
+                <com.asksira.loopingviewpager.indicator.CustomShapePagerIndicator
+                    android:id="@+id/indicatorMenu"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_20pxv"
+                    android:layout_marginEnd="@dimen/_164pxh"
+                    android:layout_marginStart="@dimen/_164pxh"
+                    android:layout_marginTop="@dimen/_112pxv"
+                    android:layout_width="wrap_content"
+                    app:drawable_normal="@drawable/indicator_unselected_bg_red_200_radius_8"
+                    app:drawable_selected="@drawable/indicator_selected_bg_red_400_radius_8"
+                    app:indicator_size="@dimen/_10pxh" app:indicator_spacing="@dimen/_2pxh"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

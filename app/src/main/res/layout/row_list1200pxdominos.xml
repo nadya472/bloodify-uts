@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="list1200pxdominosRowModel" type="com.nadyasapplication.app.modules.menureward.data.model.List1200pxdominosRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRow1200pxdominos"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" style="@style/groupStylebluegray_1">
+        <ImageView android:id="@+id/image1200pxDominos"
+            android:layout_height="@dimen/_73pxh"
+            android:layout_marginBottom="@dimen/_9pxv"
+            android:layout_marginStart="@dimen/_11pxh"
+            android:layout_marginTop="@dimen/_8pxv"
+            android:layout_width="@dimen/_73pxh"
+            android:scaleType="fitXY" cornerRadius="@{@dimen/_5pxh}"
+            imageRes="@{@drawable/img_1200pxdominos}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_1200pxdominos"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumndisc20allva"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_24pxv"
+            android:layout_marginEnd="@dimen/_91pxh"
+            android:layout_marginStart="@dimen/_18pxh"
+            android:layout_marginTop="@dimen/_26pxv"
+            android:layout_weight="0.63" android:layout_width="0dp" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:id="@+id/txtDisc20Allva"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{list1200pxdominosRowModel.txtDisc20Allva}"
+                style="@style/txtJosefinSansromanmedium13" tools:text="@string/msg_disc_20_all_va"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtSKBerlaku"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_1pxh"
+                android:layout_marginTop="@dimen/_13pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{list1200pxdominosRowModel.txtSKBerlaku}"
+                style="@style/txtJosefinSansromanlight12" tools:text="@string/lbl_s_k_berlaku"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

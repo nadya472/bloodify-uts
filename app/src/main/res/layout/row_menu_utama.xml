@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="menuUtamaRowModel" type="com.nadyasapplication.app.modules.menuutama.data.model.MenuUtamaRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRiwayatdonor"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal" style="@style/groupStylewhite_1">
+        <ImageView android:id="@+id/imageBloodOne"
+            android:layout_height="@dimen/_11pxh"
+            android:layout_marginBottom="@dimen/_17pxv"
+            android:layout_marginStart="@dimen/_14pxh"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="@dimen/_10pxh"
+            android:scaleType="fitXY" android:src="@drawable/img_blood2"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_blood2"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnriwayatdonor"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_8pxv"
+            android:layout_marginEnd="@dimen/_15pxh"
+            android:layout_marginStart="@dimen/_3pxh"
+            android:layout_marginTop="@dimen/_11pxv"
+            android:layout_weight="0.77" android:layout_width="0dp" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:id="@+id/txtRiwayatDonor"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_1pxh"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{menuUtamaRowModel.txtRiwayatDonor}"
+                style="@style/txtJosefinSansromanlight5" tools:text="@string/lbl_riwayat_donor"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtKaliCounter"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_1pxh"
+                android:layout_marginTop="@dimen/_2pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{menuUtamaRowModel.txtKaliCounter}"
+                style="@style/txtJosefinSansromanregular12_3" tools:text="@string/lbl_8_kali"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

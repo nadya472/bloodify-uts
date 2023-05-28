@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="menuJadwalVM" type="com.nadyasapplication.app.modules.menujadwal.data.viewmodel.MenuJadwalVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearMenuJadwal"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_37pxv"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_50">
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnbarsearch"
+            android:layout_height="0dp"
+            android:layout_marginEnd="@dimen/_29pxh"
+            android:layout_marginStart="@dimen/_29pxh"
+            android:layout_weight="1.0"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <Spinner
+                android:background="@drawable/layer_list_bg_bluegray_100_radius_4"
+                android:id="@+id/spinnerBarsearch"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" tools:listitem="@layout/spinner_item"/>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearPMIDaerah"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_29pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylecornerRadius">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtJADWALKEGIATAN"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginStart="@dimen/_1pxh"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{menuJadwalVM.menuJadwalModel.txtJADWALKEGIATAN}"
+                    style="@style/txtJosefinSansromanmedium13" tools:text="@string/lbl_jadwal_kegiatan"/>
+                <FrameLayout android:id="@+id/frameStacksteleven"
+                    android:layout_height="@dimen/_152pxv"
+                    android:layout_marginTop="@dimen/_7pxv"
+                    android:layout_width="@dimen/_317pxh" style="@style/groupStylebluegray_100cornerRadius">
+                    <ImageView android:id="@+id/imageStEleven"
+                        android:layout_gravity="center"
+                        android:layout_height="@dimen/_152pxh"
+                        android:layout_marginStart="@dimen/_1pxh"
+                        android:layout_width="@dimen/_316pxh"
+                        android:scaleType="fitXY"
+                        cornerRadius="@{@dimen/_6pxh}"
+                        imageRes="@{@drawable/img_st11}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_st11"/>
+                    <LinearLayout
+                        android:id="@+id/linearColumndescription"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical" style="@style/groupStylecornerRadius_1">
+                        <TextView android:gravity="start"
+                            android:id="@+id/txtDescription"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/_8pxv"
+                            android:layout_marginEnd="@dimen/_105pxh"
+                            android:layout_marginStart="@dimen/_9pxh"
+                            android:layout_marginTop="@dimen/_115pxv"
+                            android:layout_width="match_parent"
+                            android:text="@{menuJadwalVM.menuJadwalModel.txtDescription}"
+                            style="@style/txtJosefinSansromanmedium12" tools:text="@string/msg_utd_pmi_kabupat"/>
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtAkandatang"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_1pxh"
+                android:layout_marginTop="@dimen/_22pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{menuJadwalVM.menuJadwalModel.txtAkandatang}"
+                style="@style/txtJosefinSansromanmedium13" tools:text="@string/lbl_akan_datang"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtHariini"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_1pxh"
+                android:layout_marginTop="@dimen/_3pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{menuJadwalVM.menuJadwalModel.txtHariini}"
+                style="@style/txtJosefinSansromanmedium10" tools:text="@string/lbl_hari_ini"/>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRow42572167281"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6pxv"
+                android:layout_width="match_parent"
+                android:orientation="horizontal" style="@style/groupStylebluegray_1">
+                <ImageView android:id="@+id/image42572167281"
+                    android:layout_height="@dimen/_73pxh"
+                    android:layout_marginBottom="@dimen/_9pxv"
+                    android:layout_marginStart="@dimen/_11pxh"
+                    android:layout_marginTop="@dimen/_8pxv"
+                    android:layout_width="@dimen/_73pxh"
+                    android:scaleType="fitXY"
+                    cornerRadius="@{@dimen/_5pxh}"
+                    imageRes="@{@drawable/img_42572167281}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_42572167281"/>
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearColumngedungjuangfortyfive"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_18pxv"
+                    android:layout_marginEnd="@dimen/_69pxh"
+                    android:layout_marginStart="@dimen/_18pxh"
+                    android:layout_marginTop="@dimen/_19pxv"
+                    android:layout_weight="0.67"
+                    android:layout_width="0dp" android:orientation="vertical">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtGedungJuangFortyFive"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{menuJadwalVM.menuJadwalModel.txtGedungJuangFortyFive}"
+                        style="@style/txtJosefinSansromanmedium13" tools:text="@string/msg_gedung_juang_45"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtBekasiBerpijar"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_6pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{menuJadwalVM.menuJadwalModel.txtBekasiBerpijar}"
+                        style="@style/txtJosefinSansromanregular13" tools:text="@string/msg_bekasi_berpijar"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtKamis13April"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_6pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{menuJadwalVM.menuJadwalModel.txtKamis13April}"
+                        style="@style/txtJosefinSansromanlight12" tools:text="@string/msg_kamis_13_april"/>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtMinggu15Apri"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_1pxh"
+                android:layout_marginTop="@dimen/_17pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{menuJadwalVM.menuJadwalModel.txtMinggu15Apri}"
+                style="@style/txtJosefinSansromanmedium10" tools:text="@string/msg_minggu_15_apri"/>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRowy9115950271"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5pxv"
+                android:layout_width="match_parent"
+                android:orientation="horizontal" style="@style/groupStylebluegray_1">
+                <ImageView android:id="@+id/imageY9115950271"
+                    android:layout_height="@dimen/_73pxh"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_marginStart="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_7pxv"
+                    android:layout_width="@dimen/_73pxh"
+                    android:scaleType="fitXY"
+                    cornerRadius="@{@dimen/_5pxh}"
+                    imageRes="@{@drawable/img_y9115950271}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_y9115950271"/>
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearColumnmetlandtambun"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_18pxv"
+                    android:layout_marginEnd="@dimen/_40pxh"
+                    android:layout_marginStart="@dimen/_19pxh"
+                    android:layout_marginTop="@dimen/_18pxv"
+                    android:layout_weight="0.71"
+                    android:layout_width="0dp" android:orientation="vertical">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtMetlandTambun"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{menuJadwalVM.menuJadwalModel.txtMetlandTambun}"
+                        style="@style/txtJosefinSansromanmedium13" tools:text="@string/lbl_metland_tambun"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtPMRSMKN1Cika"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{menuJadwalVM.menuJadwalModel.txtPMRSMKN1Cika}"
+                        style="@style/txtJosefinSansromanregular13" tools:text="@string/msg_pmr_smkn_1_cika"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtMinggu15ApriOne"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_6pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{menuJadwalVM.menuJadwalModel.txtMinggu15ApriOne}"
+                        style="@style/txtJosefinSansromanlight12" tools:text="@string/msg_minggu_15_apri"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>
